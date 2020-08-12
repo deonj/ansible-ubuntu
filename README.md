@@ -7,6 +7,6 @@ Ansible v2.9.6 built on ubuntu:latest
 * The username and password for remote login is specified in group_vars/all.yml and should be changed to match your specific credentials
 * Uses the default ini style for hosts. Uncomment the line specified and rebuild if using YAML style for hosts
 
-docker run --name '''<your_container_name>''' --mount source='''<your_volume_name>''',target=/etc/ansible -it -d deonj/ansible-ubuntu
+docker run --name *your_container_name* --mount source=*your_volume_name*,target=/etc/ansible -it -d deonj/ansible-ubuntu
 
 **example:** *docker run --name run_ansible --mount source=ansible_vol,target=/etc/ansible -it -d deonj/ansible-ubuntu*
