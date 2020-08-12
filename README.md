@@ -2,8 +2,9 @@
 
 Ansible built on ubuntu:latest
 
-* 
-* If you are using the docker-compose file to build then ensure that the phpipam-1.4.tar file is present in the same directory (can be changed in the dockerfile)
-* The url will be *localhost:8080/phpipam/*
+* A volume should be created and mounted which will allow scripts and logs to be copied from the host to the container and vice versa
+* Folders are created for script files (ansible_scripts) and log files (ansi_logs) in /etc/ansible
+* The username and password for remote login is specified in group_vars/all.yml and should be changed to match your specific credentials
+* Uses the default ini style for hosts. Uncomment the line specified and rebuild if using YAML style for hosts
 
 docker run --name run_ansible --mount source=ansible_vol,target=/etc/ansible -it -d deonj/ansible-ubuntu
