@@ -9,4 +9,4 @@ Ansible built on ubuntu:latest
 
 docker run --name <your_container_name> --mount source=<your_volume_name>,target=/etc/ansible -it -d deonj/ansible-ubuntu
 
-**example:** *docker run --name ub_ansible --mount source=ansible_vol,target=/etc/ansible -it -d deonj/ansible-ubuntu*
+**example:** *docker run --name run_ansible --mount source=ansible_vol,target=/etc/ansible -it -d deonj/ansible-ubuntu*
