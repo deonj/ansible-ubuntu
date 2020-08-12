@@ -1,6 +1,6 @@
 # ansible-ubuntu
 
-Ansible built on ubuntu:latest
+Ansible v2.9.6 built on ubuntu:latest
 
 * A volume should be created and mounted which will allow scripts and logs to be copied from the host to the container and vice versa
 * Folders are created for script files (ansible_scripts) and log files (ansi_logs) in /etc/ansible
