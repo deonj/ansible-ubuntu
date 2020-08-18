@@ -11,6 +11,12 @@ Ansible v2.9.6 built on ubuntu:latest
 
 docker run --name *your_container_name* --mount source=*your_volume_name*,target=/etc/ansible -it -d deonj/ansible-ubuntu
 
-**example:** 
+**Example:** 
+
+ Create a docker volume:
+ 
+    docker volume create ansible_vol
+    
+Run the docker container:
     
     docker run --name run_ansible --mount source=ansible_vol,target=/etc/ansible -it -d deonj/ansible-ubuntu
