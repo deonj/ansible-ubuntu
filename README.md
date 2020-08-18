@@ -13,4 +13,4 @@ docker run --name *your_container_name* --mount source=*your_volume_name*,target
 
 **example:** 
     
-    *docker run --name run_ansible --mount source=ansible_vol,target=/etc/ansible -it -d deonj/ansible-ubuntu*
+    docker run --name run_ansible --mount source=ansible_vol,target=/etc/ansible -it -d deonj/ansible-ubuntu
